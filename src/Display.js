@@ -1,13 +1,13 @@
 import React, { Component } from "react";
+import "./Display.css";
 
 class Display extends Component {
   render() {
     return (
       <section>
-        {this.props.message}
-        {/* in App.js: <Display message="G'day worldly mates!"/> */}
-        {/* {this.object.property} syntax displays value of .message */}
-        {/* "this" is the caller (the parent component) */}
+        <div>Number of thing Mongo learn about React:</div>
+        {/* countThings defined as this.state.count in App */}
+        <div>{this.props.countThings}</div>
       </section>
     );
   }
